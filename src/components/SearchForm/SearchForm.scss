@@ -1,0 +1,15 @@
+.form {
+  width: 55vw;
+  margin: auto;
+}
+
+.form__actions {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.form__loader {
+  color: #1976d2;
+}

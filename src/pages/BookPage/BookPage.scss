@@ -1,0 +1,68 @@
+.book__page {
+  width: 70%;
+  margin: 2rem auto;
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+  box-sizing: border-box;
+
+  .page__cover {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 0 0 150px;
+
+    img {
+      max-width: 100%;
+      height: auto;
+      object-fit: contain;
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+    }
+
+    img:hover {
+      transform: scale(1.15);
+    }
+
+    .rating {
+      margin-top: 1.5rem;
+      font-size: 1.2rem;
+      color: #f5c518;
+
+      svg {
+        margin-right: 2px;
+      }
+    }
+  }
+
+  .page__meta {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0.5rem;
+    flex: 0 0 200px;
+
+    .text__title {
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    .text__authors,
+    .text__categories,
+    .text__published {
+      font-size: 0.95rem;
+    }
+  }
+
+  .page__content {
+    display: flex;
+    flex: 1;
+    gap: 2rem;
+  }
+
+  .page__description {
+    flex: 2;
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+}
